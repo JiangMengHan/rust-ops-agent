@@ -1,0 +1,60 @@
+# Local agent planning records (kept on this machine)
+/findings.md
+/progress.md
+/task_plan.md
+/.codex/
+
+# Rust build, profiling and coverage output
+target/
+**/*.rs.bk
+*.profraw
+*.profdata
+/coverage/
+/dist/
+/artifacts/
+
+# Private runtime state, configuration and test environments
+/.local/
+/configs/local/
+/secrets/
+/certs/
+/data/
+/logs/
+.env
+.env.*
+!.env.example
+!.env.sample
+
+# Certificates and credentials; public example files must use placeholders
+*.key
+*.pem
+*.p12
+*.pfx
+*.jks
+*.keystore
+id_rsa
+id_ed25519
+
+# SQLite runtime files and consistent-backup output
+*.db
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite-shm
+*.sqlite-wal
+*.sqlite3
+*.sqlite3-shm
+*.sqlite3-wal
+
+# Operating system and editor scratch files
+.DS_Store
+._*
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# Cargo.lock is intentionally tracked for these application binaries.
+# Do not ignore *.log, *.gz or *.zst globally: sanitized fixtures belong in tests/fixtures.

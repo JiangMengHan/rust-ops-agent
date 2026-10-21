@@ -1,0 +1,16 @@
+* text=auto
+*.md text eol=lf
+*.rs text eol=lf
+*.toml text eol=lf
+*.yml text eol=lf
+*.yaml text eol=lf
+*.sh text eol=lf
+*.service text eol=lf
+*.json text eol=lf
+*.log text eol=lf
+*.gz binary
+*.zst binary
+*.png binary
+
+# Fixtures may deliberately contain CRLF, invalid encodings or exact byte offsets.
+tests/fixtures/** -text !eol
